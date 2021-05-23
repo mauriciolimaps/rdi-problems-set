@@ -1,2 +1,2 @@
 language = "bash"
-run = "./build.sh"
+run = "./run.sh"
