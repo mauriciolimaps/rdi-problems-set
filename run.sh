@@ -17,8 +17,25 @@ function problem_1_test()
 	echo Output:
 	cat $output
 	echo
-
 }
+
+
+function problem_2_test()
+{
+	echo
+	output=OUTPUT2.TXT
+	rm  $output
+	echo Input:
+	cat $1 
+	cat $1 | mono ../bin/Debug/problem_2.exe
+	echo
+	echo Output:
+	cat $output
+	echo
+}
+
+
+
 
 cd tests
 
@@ -38,3 +55,4 @@ problem_1_test problem-1-06.txt
 echo
 echo \##  Problem 2 \#####################################
 
+problem_2_test problem-2-01.txt
