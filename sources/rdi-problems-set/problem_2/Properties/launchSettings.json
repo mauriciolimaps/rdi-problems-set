@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "problem_2": {
+      "commandName": "Project",
+      "commandLineArgs": "< problem-2-01.txt",
+      "workingDirectory": "$(SolutionDir)\\..\\..\\tests"
+    }
+  }
+}
