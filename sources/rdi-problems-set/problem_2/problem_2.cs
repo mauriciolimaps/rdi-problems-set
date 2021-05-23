@@ -1,15 +1,4 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
+﻿using System.IO;
 using System;
 
 class Solution
@@ -18,8 +7,22 @@ class Solution
 
     static int[] circularArrayRotation(int[] a, int k, int[] queries)
     {
-        return new int[] {};
+        int length = a.GetLength(0);
+
+        int position;
+        int[] result = new int[queries.GetLength(0)];
+        for (int index = 0; index < queries.Length; index++)
+        {
+            position = index - k;
+            if (position < 0)
+                position = position % length + (position % length == 0 ? 0 : length);
+
+            result[index] = a[position];
+        }
+
+        return result;
     }
+
 
     static void Main(string[] args)
     {
