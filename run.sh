@@ -27,14 +27,28 @@ function problem_2_test()
 	rm  $output
 	echo Input:
 	cat $1 
-	cat $1 | mono ../bin/Debug/problem_2.exe
 	echo
+	echo
+	echo Output:
+	cat $1 | mono ../bin/Debug/problem_2.exe
+	cat $output
+	echo
+}
+
+
+function problem_3_test()
+{
+	echo
+	output=OUTPUT3.TXT
+	rm  $output
+	echo Input:
+	cat $1 
+	cat $1 | mono ../bin/Debug/problem_3.exe
 	echo
 	echo Output:
 	cat $output
 	echo
 }
-
 
 
 
@@ -59,3 +73,12 @@ echo \##  Problem 2 \#####################################
 problem_2_test problem-2-01.txt
 divider
 problem_2_test problem-2-02.txt
+
+
+echo
+echo \##  Problem 3 \#####################################
+
+problem_3_test problem-3-01.txt
+divider
+problem_3_test problem-3-02.txt
+
