@@ -29,6 +29,7 @@ function problem_2_test()
 	cat $1 
 	cat $1 | mono ../bin/Debug/problem_2.exe
 	echo
+	echo
 	echo Output:
 	cat $output
 	echo
@@ -56,3 +57,5 @@ echo
 echo \##  Problem 2 \#####################################
 
 problem_2_test problem-2-01.txt
+divider
+problem_2_test problem-2-02.txt

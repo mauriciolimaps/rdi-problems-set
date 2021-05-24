@@ -13,7 +13,7 @@ class Solution
         int[] result = new int[queries.GetLength(0)];
         for (int index = 0; index < queries.Length; index++)
         {
-            position = index - k;
+            position = queries[index] - k;
             if (position < 0)
                 position = position % length + (position % length == 0 ? 0 : length);
 
