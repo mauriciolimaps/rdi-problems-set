@@ -2,9 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartWorkingDirectory>..\..\tests</StartWorkingDirectory>
-    <StartArguments>&lt; problem-2-01.txt</StartArguments>
+    <StartArguments>&lt; problem-3-01.txt</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <StartWorkingDirectory>D:\mauricio\projects\rdi-problems-set\tests\</StartWorkingDirectory>
+    <StartWorkingDirectory>..\..\tests</StartWorkingDirectory>
+    <StartArguments>&lt; problem-3-01.txt</StartArguments>
   </PropertyGroup>
 </Project>
